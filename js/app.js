@@ -41,7 +41,7 @@ function posicaoRandon() {
       window.location.href = "fim_de_jogo.html";
     } else {
       document.getElementById("mosquito").remove();
-      document.getElementById("v" + vidas).src = "/imagens/coracao_vazio.png";
+      document.getElementById("v" + vidas).src = "./imagens/coracao_vazio.png";
       vidas++;
       console.log(vidas);
     }
@@ -61,7 +61,7 @@ function posicaoRandon() {
   posicaoy = posicaoy < 0 ? 0 : posicaoy;
   //criar elemento html
   var mosquito = document.createElement("img");
-  mosquito.src = "/imagens/mosca.png";
+  mosquito.src = "imagens/mosca.png";
   mosquito.className = tamanhoAleatorio() + " " + ladoAleatorio();
   mosquito.style.left = posicaoX + "px";
   mosquito.style.top = posicaoy + "px";
